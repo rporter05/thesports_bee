@@ -1,22 +1,13 @@
 <div class="jumbotron text-center">
-    <h1>Welcome to Dev Match</h1>
-    <h3>A membership site where entreprenuers can meet developers</h3>
+    <h1>The Sports Bee</h1>
+    <h3>Get all of your trending sports facts in less than 7 minutes a day.</h3>
 </div>
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 col-md-offset-3">
         <div class="well">
-            <h2 class="text-center">Basic Membership</h2>
-            <h4 class="text-center">Sign up for free and get basic access to the community.</h4>
-            <br>
-            <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-lg btn-block" %>
+            <h2 class="text-center">Free 60 Day Trial</h2>
+            <h4 class="text-center">Sign up now for free then pay only $5/month.</h4>
+            <%= link_to "Sign up now", new_user_registration_path(plan: @pro_plus_plan.id), class: "btn btn-success btn-lg btn-block" %>
         </div>
     </div>
-    <div class="col-md-6">
-        <div class="well">
-            <h2 class="text-center">Pro Membership</h2>
-            <h4 class="text-center">Sign up for the pro account for $10/month and get access to the community and contact information!</h4>
-            <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: "btn btn-success btn-lg btn-block" %>
-        </div>
-    </div>
-
 </div>
