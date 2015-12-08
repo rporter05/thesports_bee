@@ -2,12 +2,17 @@
     <h1>The Sports Bee</h1>
     <h3>Get all of your trending sports facts in less than 7 minutes a day.</h3>
 </div>
+
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
         <div class="well">
             <h2 class="text-center">Free 60 Day Trial</h2>
-            <h4 class="text-center">Sign up now for free then pay only $5/month.</h4>
+            <h4 class="text-center">Sign up for a 60 day free trial then pay only $5/month.</h4>
             <%= link_to "Sign up now", new_user_registration_path(plan: @pro_plus_plan.id), class: "btn btn-success btn-lg btn-block" %>
+        </div>
+        <div class="well">
+            <h4 class="text-left">Example News:</h2>
+            <h5 class="text-left"><a href="http://www.fcbarcelona.com/">Barca</a> wins over <a href="http://www.realsociedad.com/">Real Sociedad</a> 4-0 w/ <a href="http://www.espnfc.us/player/132948/neymar">Neymar</a> scoring first then <a href="http://www.espnfc.us/player/125088/luis-suarez">Luis Suarez</a> and finally <a href="http://www.espnfc.us/player/45843/lionel-messi">Messi</a>.  After Saturday’s game Messi is still trailing Cristiano Ronaldo by 5 goals in La Liga. --<a href="http://www.espnfc.us/spanish-primera-division/match/433853/barcelona-real-sociedad/report">link</a></h4>
         </div>
     </div>
 </div>

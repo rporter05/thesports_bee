@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require_tree .
+$(document).ready(function() {
+  var bgArray = ['football1.png', 'soccer1.png'];
+  var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
+  var path = '/assets/';
+  var imageUrl = path + bg;
+  $('body').css('background-image', 'url(' + imageUrl +')');
+});

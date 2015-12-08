@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Sports Bee</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag "https://js.stripe.com/v2/", type: 'text/javascript' %>
+  <%= javascript_include_tag 'application' %>
+  <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<div class="col-md-6 col-md-offset-3">
+    <div class="well">
+        <h4 class="text-left">Example News:</h2>
+        <h5 class="text-left"><a href="http://www.fcbarcelona.com/">Barca</a> wins over <a href="http://www.realsociedad.com/">Real Sociedad</a> 4-0 w/ <a href="http://www.espnfc.us/player/132948/neymar">Neymar</a> scoring first then <a href="http://www.espnfc.us/player/125088/luis-suarez">Luis Suarez</a> and finally <a href="http://www.espnfc.us/player/45843/lionel-messi">Messi</a>.  After Saturday’s game Messi is still trailing Cristiano Ronaldo by 5 goals in La Liga. --<a href="http://www.espnfc.us/spanish-primera-division/match/433853/barcelona-real-sociedad/report">link</a></h4>
+    </div>
+    
+    <div class="well">
+        <h4 class="text-left">Example News:</h2>
+        <h5 class="text-left"><a href="http://www.fcbarcelona.com/">Barca</a> wins over <a href="http://www.realsociedad.com/">Real Sociedad</a> 4-0 w/ <a href="http://www.espnfc.us/player/132948/neymar">Neymar</a> scoring first then <a href="http://www.espnfc.us/player/125088/luis-suarez">Luis Suarez</a> and finally <a href="http://www.espnfc.us/player/45843/lionel-messi">Messi</a>.  After Saturday’s game Messi is still trailing Cristiano Ronaldo by 5 goals in La Liga. --<a href="http://www.espnfc.us/spanish-primera-division/match/433853/barcelona-real-sociedad/report">link</a></h4>
+    </div>
+</div>
+
+</body>
+</html>
